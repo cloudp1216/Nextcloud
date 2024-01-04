@@ -733,7 +733,7 @@ Query OK, 0 rows affected (0.01 sec)
 [root@nextcloud pkgs]# chown www:www /data/nextcloud -R
 ```
 
-#### 4、通过f访问`https://cloud.example.com`打开nextcloud界面安装即可（注意数据库选择mysql）：
+#### 4、通过访问`https://cloud.example.com`打开nextcloud界面安装即可（注意数据库选择mysql）：
 ![](./img/nextcloud.png)
 
 #### 5、nextcloud配置调整：
