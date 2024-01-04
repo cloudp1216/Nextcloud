@@ -1,16 +1,16 @@
 
 ## 一、环境
 #### 1、硬件环境：
-Server：Dell R720（32核、64G内存）
-RAID：8块4T盘配置为Raid6，实际有效空间为20T
+- Server：Dell R720（32核、64G内存）
+- RAID：8块4T盘配置为Raid6，实际有效空间为20T
 
 #### 2、软件环境：
-OS：Rocky Linux 8.9（最小化）
-Mysql：mysql-8.0.35-linux-glibc2.28-x86_64.tar.xz
-PHP：php-8.2.14.tar.gz
-Redis：redis-6.2.14.tar.gz
-Nginx：nginx-1.20.2.tar.gz
-Nextcloud：nextcloud-27.1.5.tar.bz2
+- OS：Rocky Linux 8.9（最小化）
+- Mysql：mysql-8.0.35-linux-glibc2.28-x86_64.tar.xz
+- PHP：php-8.2.14.tar.gz
+- Redis：redis-6.2.14.tar.gz
+- Nginx：nginx-1.20.2.tar.gz
+- Nextcloud：nextcloud-27.1.5.tar.bz2
 
 
 ## 二、安装Mysql
