@@ -330,7 +330,7 @@ apcu
 
 #### 8、安装php redis扩展：
 ```shell
-[root@nextcloud ~]# dnf install git
+[root@nextcloud pkgs]# dnf install git
 [root@nextcloud pkgs]# git clone https://github.com/phpredis/phpredis.git
 [root@nextcloud pkgs]# cd phpredis
 ```
