@@ -104,7 +104,7 @@ owners.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'xxxx';                                # 设置root密码
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'xxxx';                        # 设置root密码
 Query OK, 0 rows affected (0.02 sec)
 
 mysql> flush privileges;
@@ -538,15 +538,15 @@ map $arg_v $asset_immutable {
 server {
     listen 443      ssl http2;
     listen [::]:443 ssl http2;
-    server_name nc.example.local;                                             # 注意：域名根据实际情况修改
+    server_name cloud.example.local;                                       # 注意：域名根据实际情况修改
 
     # Path to the root of your installation
-    root /data/nextcloud;                                                     # 注意：网站根路径
+    root /data/nextcloud;                                                  # 注意：网站根路径
 
     # Use Mozilla's guidelines for SSL/TLS settings
     # https://mozilla.github.io/server-side-tls/ssl-config-generator/
-    ssl_certificate     /usr/local/nginx/conf/nc.example.local.crt;           # 注意：证书根据实际情况签发
-    ssl_certificate_key /usr/local/nginx/conf/nc.example.local.key;
+    ssl_certificate     /usr/local/nginx/conf/cloud.example.local.crt;     # 注意：证书根据实际情况签发
+    ssl_certificate_key /usr/local/nginx/conf/cloud.example.local.key;
 
     # Prevent nginx HTTP Server Detection
     server_tokens off;
@@ -704,7 +704,6 @@ server {
     }
 }
 
-EOF
 ```
 ```shell
 [root@nextcloud ~]# systemctl restart nginx
@@ -749,12 +748,12 @@ $CONFIG = array (
   'secret' => '7r1wxxxx',
   'trusted_domains' =>
   array (
-    0 => 'nc.example.local',
+    0 => 'cloud.example.com',
   ),
   'datadirectory' => '/data/nextcloud/data',
   'dbtype' => 'mysql',
   'version' => '27.1.5.1',
-  'overwrite.cli.url' => 'https://nc.example.local',
+  'overwrite.cli.url' => 'https://cloud.example.com',
   'dbname' => 'nextcloud',
   'dbhost' => '127.0.0.1:3306',
   'dbport' => '',
