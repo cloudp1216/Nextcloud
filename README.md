@@ -733,7 +733,7 @@ Query OK, 0 rows affected (0.01 sec)
 [root@nextcloud pkgs]# chown www:www /data/nextcloud -R
 ```
 
-#### 4、通过访问`https://cloud.example.com`打开nextcloud界面安装即可（注意数据库选择mysql）：
+#### 4、通过访问`https://cloud.example.local`打开nextcloud界面安装即可（注意数据库选择mysql）：
 ![](./img/nextcloud.png)
 
 #### 5、nextcloud配置调整：
@@ -747,12 +747,12 @@ $CONFIG = array (
   'secret' => '7r1wxxxx',
   'trusted_domains' =>
   array (
-    0 => 'cloud.example.com',
+    0 => 'cloud.example.local',
   ),
   'datadirectory' => '/data/nextcloud/data',
   'dbtype' => 'mysql',
   'version' => '27.1.5.1',
-  'overwrite.cli.url' => 'https://cloud.example.com',
+  'overwrite.cli.url' => 'https://cloud.example.local',
   'dbname' => 'nextcloud',
   'dbhost' => '127.0.0.1:3306',
   'dbport' => '',
